@@ -1,0 +1,7 @@
+Lista de Requisitos de Infraestrutura
+Aqui estão os requisitos de infraestrutura para o sistema:
+
+SGBD e versão: MySQL 8.0
+Servidor de aplicação e versão: Apache 2.4
+Sistema Operacional: Pode ser qualquer sistema operacional que suporte Apache, PHP, e MySQL, como Ubuntu 20.04 ou Windows 10.
+Linguagem e versão: PHP 7.4
