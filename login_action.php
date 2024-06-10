@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['user_name'] = $user['nome'];
         header("Location: dashboard.php");
     } else {
-        header("Location: login.php");
+        header("Location: index.php");
     }
 }
 ?>
