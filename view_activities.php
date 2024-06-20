@@ -44,6 +44,7 @@ echo "<h2>Atividades da Turma: " . $turma['nome'] . "</h2>";
             <tr>
                 <th>Número da Atividade</th>
                 <th>Descrição da Atividade</th>
+                <th>Ações</th>
             </tr>
             <?php
             $stmt = $pdo->prepare("SELECT * FROM Atividade WHERE turma_id = ?");
@@ -54,6 +55,7 @@ echo "<h2>Atividades da Turma: " . $turma['nome'] . "</h2>";
                 echo "<tr>";
                 echo "<td>" . $atividade['id'] . "</td>";
                 echo "<td>" . $atividade['descricao'] . "</td>";
+                echo "<td><a class='button' href='delete_activity.php?id=" . $atividade['id'] . "&turma_id=" . $turma_id . "'>Excluir</a></td>";
                 echo "</tr>";
             }
             ?>
